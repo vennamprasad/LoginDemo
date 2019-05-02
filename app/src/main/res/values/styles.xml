@@ -6,17 +6,23 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/convergence</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="actionBarTabTextStyle">@font/convergence</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:fontFamily">@font/convergence</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowNoTitle">true</item>
