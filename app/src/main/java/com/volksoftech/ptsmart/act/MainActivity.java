@@ -3,7 +3,6 @@ package com.volksoftech.ptsmart.act;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         if (sharedpreferences.contains(loginUser)) {
-            userName = sharedpreferences.getString(loginUser, null);
+            startActivity(new Intent(MainActivity.this, LoadListShimmerExample.class));
         } else {
             userName = "LOG IN";
         }

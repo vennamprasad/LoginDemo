@@ -6,8 +6,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.PorterDuff;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Fade;
@@ -153,7 +151,10 @@ public class LoginActivity extends AppCompatActivity {
         int cx = myView.getMeasuredWidth() / 2;
         int cy = myView.getMeasuredHeight() / 2;
         int initialRadius = myView.getWidth() / 2;
-        Animator anim = ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, 0);
+        Animator anim = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            anim = ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, 0);
+        }
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
