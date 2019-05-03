@@ -22,8 +22,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.example.trackrtc.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import es.dmoral.toasty.Toasty;
 
 public class LoginActivity extends AppCompatActivity {
@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
                         SharedPreferences pref = getApplicationContext().getSharedPreferences(MyPREFERENCES, 0); // 0 - for private mode
                         SharedPreferences.Editor editor = pref.edit();
                         editor.putString(loginUser, sharedpreferences.getString(username, null));
-                        editor.commit();
+                        editor.apply();
                         onBackPressed();
                     } else {
                         Toasty.error(getApplicationContext(), "Credentials not matched", Toast.LENGTH_SHORT, true).show();
@@ -155,6 +155,7 @@ public class LoginActivity extends AppCompatActivity {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             anim = ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, 0);
         }
+        assert anim != null;
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {

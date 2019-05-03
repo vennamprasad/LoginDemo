@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50.0dip"
+                    android:letterSpacing="0.0325"
+                    android:lineSpacingExtra="4.0dip"
+                    android:text="Are you looking for Bus ?"
+                    android:textSize="50.0sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="37.69998dip"
+                    android:letterSpacing="0.0325"
+                    android:lineSpacingExtra="5.0dip"
+                    android:text="@string/join_10_million_ntravellers"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="20.0sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login / Signup "
+                    android:textColor="@color/lightGrey"
+                    android:textSize="13.299988sp"/>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.699982dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@drawable/rectanlgle_gray_border"
+                    android:orientation="horizontal"
+                    android:paddingLeft="17.0dip"
+                    android:paddingTop="19.0dip"
+                    android:paddingBottom="18.0dip">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phone_receiver"/>
+
+                <EditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="13.0dip"
+                        android:background="#00000000"
+                        android:hint="MOBILE NUMBER"
+                        android:inputType="number"
+                        android:letterSpacing="0.0325"
+                        android:maxLength="10"
+                        android:textColor="@color/lightGrey"
+                        android:textColorHint="#ff91959d"
+                        android:textSize="15.0sp"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25.0dip"
+                    android:background="@drawable/rectangle_cure_blue"
+                    android:letterSpacing="0.0325"
+                    android:padding="16.299988dip"
+                    android:text="CONTINUE"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15.0sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

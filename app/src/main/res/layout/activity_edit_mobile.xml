@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.699982dip"
+                    android:letterSpacing="0.0325"
+                    android:text="Mobile Verification"
+                    android:textColor="@color/black"
+                    android:textSize="20.0sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.699982dip"
+                    android:letterSpacing="0.0325"
+                    android:lineSpacingExtra="5.0dip"
+                    android:text="A Message with 6 digit verification code was sent to +919533364462"
+                    android:textSize="13.299988sp"/>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19.699982dip"
+                    android:background="@drawable/rectanlgle_gray_border"
+                    android:orientation="horizontal"
+                    android:padding="18.0dip">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phone_receiver"/>
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="#00000000"
+                        android:hint="\ 9549991840"
+                        android:inputType="number"
+                        android:letterSpacing="0.0325"
+                        android:maxLength="10"
+                        android:textColor="#ff000000"
+                        android:textColorHint="#ff000000"
+                        android:textSize="13.299988sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:layout_marginBottom="25.0dip"
+                android:background="@drawable/rectangle_cure_blue"
+                android:letterSpacing="0.0325"
+                android:lineSpacingExtra="4.0dip"
+                android:padding="16.299988dip"
+                android:text="Update"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"/>
+    </RelativeLayout>
+</layout>

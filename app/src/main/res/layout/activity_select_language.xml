@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".act.SelectLanguage">
 
-    <TextView
-            android:text="@string/select_country"
-            android:layout_width="match_parent"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_height="wrap_content"
-            android:id="@+id/select_country"/>
-    <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/spinner_bg"
-            android:spinnerMode="dropdown"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_below="@+id/select_country"
-            android:entries="@array/country_list"
-            android:id="@+id/country_list"/>
-    <TextView
-            android:text="@string/select_language"
-            android:layout_width="match_parent"
-            android:id="@+id/select_language"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_below="@+id/country_list"
-            android:layout_height="wrap_content"/>
-    <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/spinner_bg"
-            android:spinnerMode="dropdown"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_below="@+id/select_language"
-            android:entries="@array/language_list"
-            android:id="@+id/language_list"/>
-    <Button android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
-            android:text="Next"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:layout_height="@dimen/_35sdp"/>
-</RelativeLayout>
+        <TextView
+                android:id="@+id/select_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/select_country"/>
+
+        <Spinner
+                android:id="@+id/country_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/select_country"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/country_list"
+                android:spinnerMode="dropdown"/>
+
+        <TextView
+                android:id="@+id/select_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country_list"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/select_language"/>
+
+        <Spinner
+                android:id="@+id/language_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/select_language"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/language_list"
+                android:spinnerMode="dropdown"/>
+
+        <Button
+                android:id="@+id/but_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:text="Next"
+                android:textColor="@color/white"/>
+    </RelativeLayout>
+</layout>

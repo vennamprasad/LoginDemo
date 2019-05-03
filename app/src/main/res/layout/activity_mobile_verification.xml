@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.699982dip"
+                    android:text="Mobile Verification"
+                    android:textColor="@color/black"
+                    android:textSize="20.0sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.699982dip"
+                    android:lineSpacingExtra="5.0dip"
+                    android:text="A Message with 6 digit verification code was sent to +919533364462"
+                    android:textSize="13.299988sp"/>
+
+            <LinearLayout
+                    android:id="@+id/edit_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.699982dip"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_edit"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="Edit Mobile number"
+                        android:textColor="#ff91959d"
+                        android:textSize="13.299988sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="23.0dip"
+                android:layout_marginRight="23.0dip"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transferent"
+                    android:orientation="vertical">
+
+                <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:background="@drawable/rectanlgle_gray_border"
+                        android:hint="- - - - - - "
+                        android:inputType="number"
+                        android:letterSpacing="0.0925"
+                        android:maxLength="6"
+                        android:paddingLeft="18.199982dip"
+                        android:paddingTop="19.699982dip"
+                        android:paddingBottom="19.0dip"
+                        android:textColor="#ff000000"
+                        android:textColorHint="#ff000000"
+                        android:textSize="15.0sp"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/forward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25.299988dip"
+                    android:background="@drawable/rectangle_cure_blue"
+                    android:padding="16.299988dip"
+                    android:text="CONTINUE"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15.0sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

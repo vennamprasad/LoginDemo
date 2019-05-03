@@ -147,4 +147,5 @@
     <color name="whiteSmoke">#F5F5F5</color>
     <color name="yellow">#FFFF00</color>
     <color name="yellowGreen">#9ACD32</color>
+    <color name="transferent">#00000000</color>
 </resources>

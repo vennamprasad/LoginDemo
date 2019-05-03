@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PTSmart</string>
+    <string name="app_name">Where is my Bus</string>
     <string name="action_settings">Settings</string>
     <string name="transition_login">login</string>
     <string name="transition_signup">signup</string>
@@ -11,6 +11,7 @@
     <string name="passwoed_edittxt">Password edittxt shared</string>
     <string name="select_country">Country</string>
     <string name="select_language">Language</string>
+    <string name="join_10_million_ntravellers">Join 10 Million Travellers…</string>
     <string-array name="country_list">
         <item>Select</item>
         <item>India</item>
