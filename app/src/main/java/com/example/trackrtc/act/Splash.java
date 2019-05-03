@@ -3,15 +3,13 @@ package com.example.trackrtc.act;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.trackrtc.Constants;
+import com.example.trackrtc.R;
 import com.github.jksiezni.permissive.PermissionsGrantedListener;
 import com.github.jksiezni.permissive.PermissionsRefusedListener;
 import com.github.jksiezni.permissive.Permissive;
 import com.tapadoo.alerter.Alerter;
-import com.example.trackrtc.Constants;
-import com.example.trackrtc.R;
-import es.dmoral.toasty.Toasty;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,7 +23,6 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         setDirectoryApproach();
-        Toasty.info(this, "Welcome", Toast.LENGTH_SHORT, true).show();
         Thread splash = new Thread() {
             public void run() {
                 try {

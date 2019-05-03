@@ -1,4 +1,5 @@
 package com.example.trackrtc.utils.activity;
+
 import android.app.Activity;
 import android.view.Window;
 import android.view.WindowManager;

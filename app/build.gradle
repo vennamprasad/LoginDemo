@@ -70,4 +70,7 @@ dependencies {
     implementation 'com.getkeepsafe.taptargetview:taptargetview:1.12.0'
     // sdp text sizes
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //animations
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+    implementation 'androidx.fragment:fragment:1.0.0'
 }
