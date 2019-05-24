@@ -10,11 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
+import com.example.trackrtc.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.example.trackrtc.R;
 
 import java.util.Objects;
+
+import static androidx.core.app.ActivityOptionsCompat.makeSceneTransitionAnimation;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent io = new Intent(MainActivity.this, LoginActivity.class);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     Pair<View, String> pair1 = Pair.create(fab.findViewWithTag("login"), fab.getTransitionName());
-                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, pair1);
+                    ActivityOptionsCompat options = makeSceneTransitionAnimation(MainActivity.this, pair1);
                     startActivity(io, options.toBundle());
                 } else {
                     startActivity(io);
@@ -63,12 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         if (sharedpreferences.contains(loginUser)) {
-            startActivity(new Intent(MainActivity.this, LoadListShimmerExample.class));
+            startActivity(new Intent(MainActivity.this, Walkthrough.class));
         } else {
             userName = "LOG IN";
         }
         collapsingToolbarLayout.setTitle(userName);
-
     }
 
     private void toolbarTextAppearance() {
