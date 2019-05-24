@@ -49,6 +49,7 @@
             android:layout_margin="@dimen/fab_margin"
             android:src="@drawable/alerter_ic_face"
             android:tag="@string/transition_login"
+            android:tint="@color/white"
             android:transitionName="@string/transition_login"
             app:backgroundTint="@color/colorAccent"
             app:elevation="10dp"

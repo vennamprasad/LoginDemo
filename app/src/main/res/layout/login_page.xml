@@ -7,15 +7,15 @@
     android:orientation="vertical">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/activity_login_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:transitionName="@string/transition_login"
-        app:backgroundTint="@color/colorAccent"
-        app:elevation="0dp"
-        app:fabSize="normal"
-        app:pressedTranslationZ="8dp" />
+            android:id="@+id/activity_login_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:transitionName="@string/transition_login"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="8dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/login_cardview"

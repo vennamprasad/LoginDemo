@@ -33,7 +33,7 @@ public class Splash extends AppCompatActivity {
                             Manifest.permission.CAMERA).whenPermissionsGranted(new PermissionsGrantedListener() {
                         @Override
                         public void onPermissionsGranted(String[] permissions) throws SecurityException {
-                            startActivity(new Intent(Splash.this, SelectLanguage.class));
+                            startActivity(new Intent(Splash.this, MainActivity.class));
                             finish();
                         }
                     }).whenPermissionsRefused(new PermissionsRefusedListener() {

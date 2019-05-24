@@ -15,12 +15,11 @@ import com.example.trackrtc.Adpt.BusListAdapter;
 import com.example.trackrtc.R;
 import com.example.trackrtc.model.BusList;
 import com.example.trackrtc.utils.Apis;
+import com.example.trackrtc.utils.RetrofirUtils;
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -52,11 +51,7 @@ public class Search extends Fragment {
 
     private void serviceCall() {
         try {
-            Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(Apis.BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-            Apis apis = retrofit.create(Apis.class);
+            Apis apis = RetrofirUtils.serviceGenerator().create(Apis.class);
             Call<ArrayList<BusList>> userResponseCall = apis.getBusList();
             userResponseCall.enqueue(new Callback<ArrayList<BusList>>() {
                 @SuppressLint("CheckResult")

@@ -25,7 +25,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);   //show back button
         //loading the default fragment
         loadFragment(new Search());
-
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.btm_navigation);
         navigation.setOnNavigationItemSelectedListener(this);
